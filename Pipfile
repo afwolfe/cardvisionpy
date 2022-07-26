@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pillow = "*"
+pytesseract = "*"
+opencv-python = "*"
+dateparser = "*"
+
+[dev-packages]
+black = "*"
+flake8 = "*"
+mypy = "*"
+pytest = "*"
+types-dateparser = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
