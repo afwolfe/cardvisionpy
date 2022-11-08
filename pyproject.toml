@@ -5,15 +5,17 @@ version = "1.0.0"
 authors = [
     { name = "Alex Wolfe" }
 ]
-
 dependencies = [
     "pillow ~= 9.2.0",
     "pytesseract ~= 0.3.9",
     "opencv-python ~= 4.6.0.66",
     "dateparser ~= 1.1.1"
 ]
-
 requires-python = ">=3.10"
+
+[project.scripts]
+cardvisionpy = "cardvisionpy.__main__:main"
+
 
 [build-system]
 requires = ["setuptools>=61"] 
