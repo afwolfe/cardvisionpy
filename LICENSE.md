@@ -2,6 +2,7 @@ The MIT License (MIT)
 =====================
 
 CardVisionPy Copyright © `2022` `Alex Wolfe`
+
 CardVision Copyright © `2021` `Daniel Bergquist`
 
 Permission is hereby granted, free of charge, to any person
