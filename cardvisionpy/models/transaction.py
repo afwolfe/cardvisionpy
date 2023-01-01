@@ -1,11 +1,12 @@
 from datetime import date
 from typing import Optional
 
+
 class Transaction:
     """
     Holds a Transaction representing an Apple Card transaction.
     """
-    
+
     # The date of the transaction
     date: Optional[date] = None
     # The payee (or payer)
@@ -38,7 +39,6 @@ class Transaction:
 
         return not ("refund" in self.memo.lower() or self.is_declined())
 
-
     def is_declined(self) -> bool:
         """Determines if the given transaction string is 'Declined'"""
         if self.memo:
@@ -52,7 +52,7 @@ class Transaction:
             return "pending" in self.memo.lower()
         else:
             return False
-        
+
     def __str__(self) -> str:
         return f"""Payee: {self.payee}
 Amount: {self.amount}
